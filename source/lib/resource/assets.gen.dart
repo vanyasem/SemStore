@@ -17,9 +17,6 @@ class $AssetsFontsGen {
   /// File path: assets/fonts/SF-Pro-Text-Bold.otf
   String get sFProTextBold => 'assets/fonts/SF-Pro-Text-Bold.otf';
 
-  /// File path: assets/fonts/SF-Pro-Text-Light.otf
-  String get sFProTextLight => 'assets/fonts/SF-Pro-Text-Light.otf';
-
   /// File path: assets/fonts/SF-Pro-Text-Medium.otf
   String get sFProTextMedium => 'assets/fonts/SF-Pro-Text-Medium.otf';
 
@@ -32,7 +29,6 @@ class $AssetsFontsGen {
   /// List of all assets
   List<String> get values => [
     sFProTextBold,
-    sFProTextLight,
     sFProTextMedium,
     sFProTextRegular,
     sFProTextSemibold,
@@ -42,12 +38,15 @@ class $AssetsFontsGen {
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Discord.png
+  AssetGenImage get discord => const AssetGenImage('assets/images/Discord.png');
+
   /// File path: assets/images/YooMoney.png
   AssetGenImage get yooMoney =>
       const AssetGenImage('assets/images/YooMoney.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [yooMoney];
+  List<AssetGenImage> get values => [discord, yooMoney];
 }
 
 class Assets {

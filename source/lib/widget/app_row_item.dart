@@ -9,11 +9,13 @@ class AppRowItem extends StatelessWidget {
     required this.appIcon,
     required this.appName,
     required this.appVersion,
+    required this.onInstallClick,
   });
 
   final AssetGenImage appIcon;
   final String appName;
   final String appVersion;
+  final VoidCallback onInstallClick;
 
   @override
   Widget build(final BuildContext context) {

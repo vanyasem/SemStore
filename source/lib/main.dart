@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/widgets.dart';
+import 'package:sem_store/entity/app.dart';
 import 'package:sem_store/resource/assets.gen.dart';
 import 'package:sem_store/resource/fonts.gen.dart';
 import 'package:sem_store/widget/app_row_item.dart';
+import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +12,21 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
+
+  static final List<App> _apps = <App>[
+    App(
+      icon: Assets.images.discord,
+      name: 'Discord',
+      version: '289.2',
+      plistUrl: 'https://bitva-pod-moskvoy.ru/ios/discord-manifest.plist',
+    ),
+    App(
+      icon: Assets.images.yooMoney,
+      name: 'YooMoney',
+      version: '11.12.0',
+      plistUrl: '', // TODO(vanyasem): Add plist Url
+    ),
+  ];
 
   @override
   Widget build(final BuildContext context) {
@@ -28,7 +45,7 @@ class MainApp extends StatelessWidget {
               fontSize: 16,
               fontWeight: FontWeight.w600,
               letterSpacing: -0.31,
-              fontFamily: AppFontFamily.sFProText
+              fontFamily: AppFontFamily.sFProText,
             ),
           ),
         ),
@@ -37,18 +54,21 @@ class MainApp extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               spacing: 8,
-              children: <Widget>[
-                AppRowItem(
-                  appIcon: Assets.images.yooMoney,
-                  appName: 'YooMoney',
-                  appVersion: '1.1.1',
-                ),
-                AppRowItem(
-                  appIcon: Assets.images.yooMoney,
-                  appName: 'YooMoney',
-                  appVersion: '1.1.1',
-                ),
-              ],
+              children: _apps
+                  .map((final App app) {
+                    return AppRowItem(
+                      appIcon: app.icon,
+                      appName: app.name,
+                      appVersion: app.version,
+                      onInstallClick: () {
+                        final Uri plistUri = Uri.parse(
+                          'itms-services://?action=download-manifest&url=${app.plistUrl}',
+                        );
+                        url_launcher.launchUrl(plistUri);
+                      },
+                    );
+                  })
+                  .toList(growable: false),
             ),
           ),
         ),
