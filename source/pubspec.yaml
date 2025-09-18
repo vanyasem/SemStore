@@ -13,6 +13,8 @@ dependencies:
 
   cupertino_icons: ^1.0.8
 
+  url_launcher: ^6.3.2
+
 dev_dependencies:
   fl_common_lint: ^1.8.0
 
