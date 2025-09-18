@@ -57,9 +57,7 @@ class AppRowItem extends StatelessWidget {
         ),
         cupertino.CupertinoButton(
           padding: EdgeInsets.zero,
-          onPressed: () {
-            // TODO(vanyasem): Add action
-          },
+          onPressed: onInstallClick,
           child: const Icon(
             cupertino.CupertinoIcons.cloud_download,
             semanticLabel: 'Install',
