@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart' as cupertino;
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,8 +10,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return const cupertino.CupertinoApp(
+      home: cupertino.CupertinoPageScaffold(
+        navigationBar: cupertino.CupertinoNavigationBar(
+          middle: Text('SemStore'),
+        ),
+        child: Column(children: <Widget>[Text('Hello world!')]),
+      ),
     );
   }
 }
