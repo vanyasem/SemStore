@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       icon: Assets.images.discord,
       name: 'Discord',
       version: '289.2',
-      plistUrl: 'https://bitva-pod-moskvoy.ru/ios/discord-manifest.plist',
+      plistUrl: 'https://download.vanyasem.ru/plist/discord-manifest.plist',
     ),
     App(
       icon: Assets.images.yooMoney,
