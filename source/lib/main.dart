@@ -23,10 +23,17 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/8c/2d/2b8c2d13-8eac-621d-adf5-871eeff62e58/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/114x114bb.jpg',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/5a/74/b5/5a74b589-5170-5fa6-c8d7-8792f72f37a3/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/114x114bb.jpg',
       name: 'YooMoney',
       version: '11.12.0',
       bundleId: 'ru.yoo.money',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f3/ac/14/f3ac141b-fb83-54d1-36c4-4db235025cc8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/114x114bb.jpg',
+      name: 'Авито',
+      version: '200.5',
+      bundleId: 'ru.avito.app',
     ),
   ];
 
