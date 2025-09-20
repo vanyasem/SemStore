@@ -5,11 +5,11 @@ final class App {
     required this.icon,
     required this.name,
     required this.version,
-    required this.plistUrl,
+    required this.bundleId,
   });
 
   final AssetGenImage icon;
   final String name;
   final String version;
-  final String plistUrl;
+  final String bundleId;
 }

@@ -18,13 +18,13 @@ class MainApp extends StatelessWidget {
       icon: Assets.images.discord,
       name: 'Discord',
       version: '289.2',
-      plistUrl: 'https://download.vanyasem.ru/plist/discord-manifest.plist',
+      bundleId: 'com.hammerandchisel.discord',
     ),
     App(
       icon: Assets.images.yooMoney,
       name: 'YooMoney',
       version: '11.12.0',
-      plistUrl: '', // TODO(vanyasem): Add plist Url
+      bundleId: 'ru.yoo.money',
     ),
   ];
 
@@ -61,8 +61,9 @@ class MainApp extends StatelessWidget {
                       appName: app.name,
                       appVersion: app.version,
                       onInstallClick: () {
+                        const String plistUrl = 'https://plist.vanyasem.ru';
                         final Uri plistUri = Uri.parse(
-                          'itms-services://?action=download-manifest&url=${app.plistUrl}',
+                          'itms-services://?action=download-manifest&url=$plistUrl/${app.bundleId}/${app.version}/${app.name}',
                         );
                         url_launcher.launchUrl(plistUri);
                       },
