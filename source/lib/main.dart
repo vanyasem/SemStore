@@ -9,7 +9,7 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({super.key});
 
   static final List<App> _apps = <App>[
@@ -30,8 +30,18 @@ class MainApp extends StatelessWidget {
   ];
 
   @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  final TextEditingController _searchTextEditingController =
+      TextEditingController();
+
+  String _searchText = '';
+
+  @override
   Widget build(final BuildContext context) {
-    _apps.sort((final App a, final App b) => a.name.compareTo(b.name));
+    MainApp._apps.sort((final App a, final App b) => a.name.compareTo(b.name));
 
     return cupertino.CupertinoApp(
       title: 'SemStore',
@@ -54,25 +64,43 @@ class MainApp extends StatelessWidget {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+            ).copyWith(bottom: 16),
             child: Column(
               spacing: 8,
-              children: _apps
-                  .map((final App app) {
-                    return AppRowItem(
-                      appIconUrl: app.iconUrl,
-                      appName: app.name,
-                      appVersion: app.version,
-                      onInstallClick: () {
-                        const String plistUrl = 'https://plist.vanyasem.ru';
-                        final Uri plistUri = Uri.parse(
-                          'itms-services://?action=download-manifest&url=$plistUrl/${app.bundleId}/${app.version}/${app.name}',
-                        );
-                        url_launcher.launchUrl(plistUri);
-                      },
-                    );
-                  })
-                  .toList(growable: false),
+              children: <Widget>[
+                cupertino.CupertinoSearchTextField(
+                  controller: _searchTextEditingController,
+                  style: const TextStyle(fontFamily: AppFontFamily.sFProText),
+                  onChanged: (_) {
+                    setState(() {
+                      _searchText = _searchTextEditingController.text;
+                    });
+                  },
+                ),
+                ...MainApp._apps
+                    .map((final App app) {
+                      return AppRowItem(
+                        appIconUrl: app.iconUrl,
+                        appName: app.name,
+                        appVersion: app.version,
+                        onInstallClick: () {
+                          const String plistUrl = 'https://plist.vanyasem.ru';
+                          final Uri plistUri = Uri.parse(
+                            'itms-services://?action=download-manifest&url=$plistUrl/${app.bundleId}/${app.version}/${app.name}',
+                          );
+                          url_launcher.launchUrl(plistUri);
+                        },
+                      );
+                    })
+                    .where(
+                      (final AppRowItem item) => item.appName
+                          .toLowerCase()
+                          .trim()
+                          .contains(_searchText.toLowerCase().trim()),
+                    ),
+              ],
             ),
           ),
         ),
