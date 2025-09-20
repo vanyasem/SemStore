@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/widgets.dart';
 import 'package:sem_store/entity/app.dart';
-import 'package:sem_store/resource/assets.gen.dart';
-import 'package:sem_store/resource/fonts.gen.dart';
+import 'package:sem_store/resource/fonts.dart';
 import 'package:sem_store/widget/app_row_item.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
@@ -14,14 +13,16 @@ class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   static final List<App> _apps = <App>[
-    App(
-      icon: Assets.images.discord,
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/8c/2d/2b8c2d13-8eac-621d-adf5-871eeff62e58/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/114x114bb.jpg',
       name: 'Discord',
       version: '289.2',
       bundleId: 'com.hammerandchisel.discord',
     ),
-    App(
-      icon: Assets.images.yooMoney,
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/8c/2d/2b8c2d13-8eac-621d-adf5-871eeff62e58/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/114x114bb.jpg',
       name: 'YooMoney',
       version: '11.12.0',
       bundleId: 'ru.yoo.money',
@@ -57,7 +58,7 @@ class MainApp extends StatelessWidget {
               children: _apps
                   .map((final App app) {
                     return AppRowItem(
-                      appIcon: app.icon,
+                      appIconUrl: app.iconUrl,
                       appName: app.name,
                       appVersion: app.version,
                       onInstallClick: () {

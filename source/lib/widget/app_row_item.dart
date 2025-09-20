@@ -1,18 +1,17 @@
 import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/widgets.dart';
-import 'package:sem_store/resource/assets.gen.dart';
-import 'package:sem_store/resource/fonts.gen.dart';
+import 'package:sem_store/resource/fonts.dart';
 
 class AppRowItem extends StatelessWidget {
   const AppRowItem({
     super.key,
-    required this.appIcon,
+    required this.appIconUrl,
     required this.appName,
     required this.appVersion,
     required this.onInstallClick,
   });
 
-  final AssetGenImage appIcon;
+  final String appIconUrl;
   final String appName;
   final String appVersion;
   final VoidCallback onInstallClick;
@@ -23,7 +22,12 @@ class AppRowItem extends StatelessWidget {
       children: <Widget>[
         ClipRRect(
           borderRadius: BorderRadius.circular(12),
-          child: appIcon.image(fit: BoxFit.cover, width: 76, height: 76),
+          child: Image.network(
+            appIconUrl,
+            fit: BoxFit.cover,
+            width: 76,
+            height: 76,
+          ),
         ),
         Expanded(
           child: Padding(

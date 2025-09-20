@@ -18,13 +18,9 @@ dependencies:
 dev_dependencies:
   fl_common_lint: ^1.8.0
 
-  build_runner: ^2.7.1
-  flutter_gen_runner: ^5.11.0
-
 flutter:
   assets:
     - assets/fonts/
-    - assets/images/
 
   fonts:
     - family: SF Pro Text
@@ -37,11 +33,3 @@ flutter:
           weight: 600
         - asset: assets/fonts/SF-Pro-Text-Bold.otf
           weight: 700
-
-flutter_gen:
-  output: lib/resource/
-
-  fonts:
-    enabled: true
-    outputs:
-      class_name: AppFontFamily
