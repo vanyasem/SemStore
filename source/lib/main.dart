@@ -31,6 +31,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) {
+    _apps.sort((final App a, final App b) => a.name.compareTo(b.name));
+
     return cupertino.CupertinoApp(
       title: 'SemStore',
       theme: const cupertino.CupertinoThemeData(
