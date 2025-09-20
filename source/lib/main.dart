@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart' as cupertino;
 import 'package:flutter/widgets.dart';
 import 'package:sem_store/entity/app.dart';
 import 'package:sem_store/resource/fonts.dart';
+import 'package:sem_store/util/collection_util.dart';
 import 'package:sem_store/widget/app_row_item.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
@@ -64,11 +65,8 @@ class _MainAppState extends State<MainApp> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 16,
-            ).copyWith(bottom: 16),
-            child: Column(
-              spacing: 8,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: cupertino.ListView(
               children: <Widget>[
                 cupertino.CupertinoSearchTextField(
                   controller: _searchTextEditingController,
@@ -79,8 +77,15 @@ class _MainAppState extends State<MainApp> {
                     });
                   },
                 ),
+                const SizedBox(height: 16),
                 ...MainApp._apps
-                    .map((final App app) {
+                    .where(
+                      (final App item) => item.name
+                          .toLowerCase()
+                          .trim()
+                          .contains(_searchText.toLowerCase().trim()),
+                    )
+                    .map<Widget>((final App app) {
                       return AppRowItem(
                         appIconUrl: app.iconUrl,
                         appName: app.name,
@@ -94,12 +99,8 @@ class _MainAppState extends State<MainApp> {
                         },
                       );
                     })
-                    .where(
-                      (final AppRowItem item) => item.appName
-                          .toLowerCase()
-                          .trim()
-                          .contains(_searchText.toLowerCase().trim()),
-                    ),
+                    .separatedWith(const SizedBox(height: 8)),
+                const SizedBox(height: 16),
               ],
             ),
           ),
