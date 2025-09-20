@@ -63,6 +63,20 @@ class MainApp extends StatefulWidget {
       version: '6.06.0',
       bundleId: 'MB.Modulbank',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/b7/b7/e7b7b7bc-2bb2-ff6f-7451-dcb45516e8e9/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/114x114bb.jpg',
+      name: 'OfficeCapital',
+      version: '1.8',
+      bundleId: 'com.dreamgoods.officecapital',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/b8/8f/2e/b88f2e7a-f95a-6f6e-b54e-dde1d6eae003/AppIcon-1x_U007emarketing-0-10-0-85-220.png/114x114bb.jpg',
+      name: 'Salute, Jazz',
+      version: '23.10.2004',
+      bundleId: 'ru.salute.b2b',
+    ),
   ];
 
   @override
