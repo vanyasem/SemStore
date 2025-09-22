@@ -77,6 +77,41 @@ class MainApp extends StatefulWidget {
       version: '23.10.2004',
       bundleId: 'ru.salute.b2b',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/10/e7/ce10e720-821a-81f8-0123-6d230ca261dd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'Catch',
+      version: '3.0.1',
+      bundleId: 'com.easycatch.sounder',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/e0/fd/2de0fd84-a982-766b-95f4-d78ef24cf557/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/114x114bb.jpg',
+      name: 'Online',
+      version: '16.13.0',
+      bundleId: 'com.assetsonline.ios',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/7c/95/437c9537-773a-e0f2-6048-79a6954267d9/AppIcon-Light-0-0-1x_U007ephone-0-11-0-85-220.png/114x114bb.jpg',
+      name: 'Sila Zvuka',
+      version: '1.7.0',
+      bundleId: 'com.sound.power',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/a4/7e/67a47e74-9e24-4cf5-b7e5-fa357143397b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'SplitActivities',
+      version: '28052025.3',
+      bundleId: 'com.splitactivities.app',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/d8/5e/e8d85e00-2472-d15d-635a-baaebbd1a240/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'Wheels',
+      version: '1.13.1',
+      bundleId: 'com.uvehicle.car.app',
+    ),
   ];
 
   @override
