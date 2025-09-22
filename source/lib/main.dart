@@ -112,6 +112,13 @@ class MainApp extends StatefulWidget {
       version: '1.13.1',
       bundleId: 'com.uvehicle.car.app',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1d/2c/b4/1d2cb41f-bf59-916a-8fee-e87370ac1a41/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'My products',
+      version: '1.3.2',
+      bundleId: 'com.myproducts.myproductsapp',
+    ),
   ];
 
   @override
