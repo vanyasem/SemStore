@@ -44,13 +44,6 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/b8/22/1bb822c5-9bf8-b891-0043-caeac443cea3/AppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/114x114bb.jpg',
-      name: 'Еаптека',
-      version: '24.7.20',
-      bundleId: 'com.applap.Pharma',
-    ),
-    const App(
-      iconUrl:
           'https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/20/d1/45/20d145cc-409c-c917-0b08-4a0163975368/AppIcon-1x_U007emarketing-0-7-0-85-220.png/114x114bb.jpg',
       name: 'Академия инвестиций',
       version: '3.7.0',
