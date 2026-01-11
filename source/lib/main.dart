@@ -100,6 +100,13 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/9a/90/8e9a9072-e627-8c35-33f6-11e62ed648e5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'Taiga',
+      version: '1.6',
+      bundleId: 'com.hevarkian.taiga',
+    ),
+    const App(
+      iconUrl:
           'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1d/2c/b4/1d2cb41f-bf59-916a-8fee-e87370ac1a41/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
       name: 'My products',
       version: '1.3.2',
