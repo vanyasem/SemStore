@@ -112,6 +112,13 @@ class MainApp extends StatefulWidget {
       version: '1.3.2',
       bundleId: 'com.myproducts.myproductsapp',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c1/ed/79/c1ed79d8-6b03-da63-ede4-d01d8da6d7ff/AppIcon-0-0-1x_U007ephone-0-11-85-220.jpeg/114x114bb.jpg',
+      name: 'GC AI',
+      version: '1.8.1',
+      bundleId: 'com.neuro.app.prod',
+    ),
   ];
 
   @override
