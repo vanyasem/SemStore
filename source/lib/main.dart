@@ -72,13 +72,6 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ce/10/e7/ce10e720-821a-81f8-0123-6d230ca261dd/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
-      name: 'Catch',
-      version: '3.0.1',
-      bundleId: 'com.easycatch.sounder',
-    ),
-    const App(
-      iconUrl:
           'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/bd/c4/33bdc466-70f0-0b85-db0c-982201dbf5e7/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/114x114bb.jpg',
       name: 'Online',
       version: '17.0.0',
@@ -100,10 +93,10 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/d8/5e/e8d85e00-2472-d15d-635a-baaebbd1a240/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
-      name: 'Wheels',
-      version: '1.13.1',
-      bundleId: 'com.uvehicle.car.app',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/80/ab/70/80ab702e-2793-af79-7cb7-235ec30b0324/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
+      name: 'TBirds',
+      version: '1.21.1',
+      bundleId: 'com.birds.voices.app',
     ),
     const App(
       iconUrl:
