@@ -93,10 +93,10 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/a4/7e/67a47e74-9e24-4cf5-b7e5-fa357143397b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/114x114bb.jpg',
-      name: 'SplitActivities',
-      version: '28052025.3',
-      bundleId: 'com.splitactivities.app',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/b9/5f/60b95fc3-d5e5-44f7-a026-e49477c722a0/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/114x114bb.jpg',
+      name: 'Alfoto',
+      version: '2.0',
+      bundleId: 'com.alfoto.app',
     ),
     const App(
       iconUrl:
