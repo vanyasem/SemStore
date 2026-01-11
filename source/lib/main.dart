@@ -133,6 +133,13 @@ class MainApp extends StatefulWidget {
       version: '8.4.8',
       bundleId: 'by.alfabank.insync',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ec/a0/ed/eca0ed52-e7d9-6d83-3064-2ea2aff3d907/StikDebug-0-0-1x_U007epad-0-1-sRGB-85-220.png/114x114bb.jpg',
+      name: 'StikDebug',
+      version: '2.3.5',
+      bundleId: 'com.stik.sj',
+    ),
   ];
 
   @override
