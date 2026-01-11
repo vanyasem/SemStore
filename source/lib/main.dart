@@ -140,6 +140,13 @@ class MainApp extends StatefulWidget {
       version: '2.3.5',
       bundleId: 'com.stik.sj',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/0d/74/d5/0d74d508-707d-5dc8-60aa-c944b23200f1/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/114x114bb.jpg',
+      name: 'Бизнес слова',
+      version: '1.4.1',
+      bundleId: 'com.findandlearn.app',
+    ),
   ];
 
   @override
