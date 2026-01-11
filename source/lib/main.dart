@@ -58,10 +58,10 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e7/b7/b7/e7b7b7bc-2bb2-ff6f-7451-dcb45516e8e9/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/114x114bb.jpg',
-      name: 'OfficeCapital',
-      version: '1.8',
-      bundleId: 'com.dreamgoods.officecapital',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/36/11/c4/3611c471-4804-5e38-a8ea-112dedcfa4d1/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/114x114bb.jpg',
+      name: 'Финансист',
+      version: '1.0.3',
+      bundleId: 'com.ourbill.app',
     ),
     const App(
       iconUrl:
