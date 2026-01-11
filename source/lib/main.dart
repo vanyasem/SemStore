@@ -79,10 +79,10 @@ class MainApp extends StatefulWidget {
     ),
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/e0/fd/2de0fd84-a982-766b-95f4-d78ef24cf557/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/114x114bb.jpg',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/bd/c4/33bdc466-70f0-0b85-db0c-982201dbf5e7/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/114x114bb.jpg',
       name: 'Online',
-      version: '16.13.0',
-      bundleId: 'com.assetsonline.ios',
+      version: '17.0.0',
+      bundleId: 'com.digit.budg',
     ),
     const App(
       iconUrl:
