@@ -16,9 +16,9 @@ class MainApp extends StatefulWidget {
   static final List<App> _apps = <App>[
     const App(
       iconUrl:
-          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/9b/59/999b59ff-8f3f-0589-4491-20585babc7e8/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/114x114bb.jpg',
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/8f/74/048f7434-e138-992d-5601-2ff479a20366/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/114x114bb.jpg',
       name: 'Discord',
-      version: '297.1',
+      version: '310.3',
       bundleId: 'com.hammerandchisel.discord',
     ),
     const App(
