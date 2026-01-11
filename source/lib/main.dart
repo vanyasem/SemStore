@@ -119,6 +119,20 @@ class MainApp extends StatefulWidget {
       version: '1.8.1',
       bundleId: 'com.neuro.app.prod',
     ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/89/ba/0089bae1-06ac-21e6-b96b-010f854b0a41/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/114x114bb.jpg',
+      name: 'INSNC',
+      version: '1.68.0',
+      bundleId: 'by.alfabank.insync3',
+    ),
+    const App(
+      iconUrl:
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/f8/2b/27/f82b27a0-b4fd-f699-c587-322cf98f7d6c/AppIcon-0-1x_U007emarketing-0-7-0-0-sRGB-85-220-0.png/114x114bb.jpg',
+      name: 'InSync.by',
+      version: '8.4.8',
+      bundleId: 'by.alfabank.insync',
+    ),
   ];
 
   @override
